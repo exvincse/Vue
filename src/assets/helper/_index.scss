@@ -1,0 +1,96 @@
+.bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.l-header {
+  color: $white;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .6);
+  width: 50%;
+  height: 30%;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.over {
+  overflow: hidden;
+}
+
+.layout-left {
+  @media (min-width:768px) {
+    visibility: hidden;
+    transition: transform ease-in 1s;
+    transform: translateX(1140px);
+  }
+}
+
+.layout-right {
+  @media (min-width:768px) {
+    visibility: hidden;
+    transition: transform ease-in 1s;
+    transform: translateX(-1140px);
+  }
+}
+
+.show {
+  visibility: visible;
+  transform: translateX(0px);
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.navbar-light .navbar-nav .l-border {
+  color: $white;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 3px solid $Lorange;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $white;
+
+    &::after {
+      width: 100%;
+      z-index: 100;
+    }
+  }
+}
+
+.card-position {
+  position: relative;
+
+  .l-top {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    writing-mode: vertical-lr
+  }
+}
+
+.l-btn {
+  border-radius: 0;
+}
+
+.navbar-light .navbar-nav .l-active {
+  color: $Lorange !important;
+
+  &::after {
+    width: 100%;
+    z-index: 100;
+  }
+}

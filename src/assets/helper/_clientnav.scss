@@ -1,0 +1,39 @@
+.nav-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+  }
+  
+  .l-nav-item {
+    position: relative;
+  
+    ::before {
+      content: '';
+  
+      @include media-breakpoint-up(lg) {
+        position: absolute;
+        content: '/';
+        font-size: $font-size-base;
+        top: 7px;
+        color: $white;
+        right: -20px;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    right: -160%;
+    width: 300px;
+  
+    @include media-breakpoint-up(lg) {
+      min-width: 400px;
+      right: 0;
+    }
+  }
+  
+  .navbar-expand-lg .navbar-collapse {
+    @include media-breakpoint-up(lg) {
+      display: none !important
+    }
+  }

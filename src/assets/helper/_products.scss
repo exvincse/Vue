@@ -1,0 +1,41 @@
+.sticky-top {
+    z-index: 0;
+  
+    // @include media-breakpoint-up(lg) {
+    //   z-index: $zindex-sticky;
+    // }
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, .6);
+  }
+  
+  .carousel-caption {
+    top: 60%;
+    bottom: auto;
+  }
+  
+  .l-card {
+  
+    &:hover {
+      box-shadow: 0px 0px 15px #f3d42e !important;
+    }
+  }
+  
+  .products-bg {
+    background-color: #ffeedd;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  
+    .title,
+    .footer {
+      flex: 0 0 auto;
+    }
+  
+    .body {
+       flex: 1 1 auto;
+    }
+  }
