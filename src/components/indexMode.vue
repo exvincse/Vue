@@ -17,7 +17,7 @@
             </div>
 
             <div class="col-lg-9">
-              <div class="text-lg-right text-left mt-lg-0 mt-4">
+              <div class="text-lg-right text-left mt-lg-0 mt-4 mb-2">
                 <a href="#"
                    class="mr-2 text-white">
                   <i class="fab fa-facebook-square fa-2x"></i>
@@ -30,6 +30,9 @@
                    class="mr-2 text-white">
                   <i class="fab fa-github fa-2x"></i>
                 </a>
+              </div>
+              <div class="text-lg-right text-left text-white">
+                <span>以上僅學習參考用，無任何商業用途</span>
               </div>
             </div>
           </div>

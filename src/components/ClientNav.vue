@@ -7,7 +7,7 @@
 
         <router-link to="/index"
                      class="text-white">
-          <i class="fab fa-pied-piper-alt fa-2x"></i>
+          <i class="fas fa-lemon fa-2x"></i>
         </router-link>
 
         <div class="d-flex align-items-center">

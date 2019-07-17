@@ -65,7 +65,7 @@
       </div>
     </div>
 
-    <div class="h3 text-center"
+    <div class="h3 text-center vh-100"
          v-else>
       沒有符合的商品
     </div>
